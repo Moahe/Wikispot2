@@ -1,4 +1,5 @@
 # Wikispot2
+Check out the application here: http://wikispot.azurewebsites.net/
 
 A .NET application that uses Spotifys Web API and wiki API.
 
