@@ -214,7 +214,7 @@ namespace WebApplication16
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
                 builder.DataSource = "moaherm.database.windows.net";
                 builder.UserID = "moaherm";
-                builder.Password = "";
+                builder.Password = "inputyourpassword";
                 builder.InitialCatalog = "SpotifyArtist";
                 SqlConnection connection = new SqlConnection(builder.ConnectionString);
                     connection.Open();
