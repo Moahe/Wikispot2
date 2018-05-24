@@ -212,7 +212,7 @@ namespace WebApplication16
             string artistInfo = "'"+LblArtistName.Text+"', "+0+", "+0+", " +0+ ", "+LblArtistFollowers.Text+", "+0 +", "+0;
 
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "moaherm.database.windows.net";
+                builder.DataSource = "";
                 builder.UserID = "";
                 builder.Password = "";
                 builder.InitialCatalog = "SpotifyArtist";
