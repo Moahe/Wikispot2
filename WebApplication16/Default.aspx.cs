@@ -165,30 +165,6 @@ namespace WebApplication16
                 Label7.Text = "Wikipedia page not found. :(";
             }
             
-
-
-            //hämta och skriv ut jsonsträngen
-            /*string jsonstring = client.DownloadString(url);
-            WikiModel.WikiPageTop wQ = new WikiModel.WikiPageTop();
-            wQ = JsonConvert.DeserializeObject<WikiModel.WikiPageTop>(jsonstring);
-            Label7.Text = wQ.Query.Pages[0].Title;
-            //deserialisera jsonsträngen och lägg data i ett userobjekt
-            //skriv ut id och namn för new_user*/
-            /*try
-            {
-                int i = 0;
-                foreach (WikiModel.wikiPage gen in wQ.Query.Pages)
-                {
-                    
-                    Wikidiv.InnerHtml += gen.Revisions[i].Content;
-                    i++;
-                }
-            }
-            catch
-            {
-
-            }*/
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -212,8 +188,8 @@ namespace WebApplication16
 
         public void getClientCredentialsAuthToken()
         {
-            var spotifyClient = "6321e8e2733649a3b8117d9da53936d3";
-            var spotifySecret = "aa90b46e1a32454386a98c3823875b03";
+            var spotifyClient = "secret";
+            var spotifySecret = "secret";
 
             var webClient = new WebClient();
 
@@ -238,7 +214,7 @@ namespace WebApplication16
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
                 builder.DataSource = "moaherm.database.windows.net";
                 builder.UserID = "moaherm";
-                builder.Password = "Hallonpaj1992";
+                builder.Password = "";
                 builder.InitialCatalog = "SpotifyArtist";
                 SqlConnection connection = new SqlConnection(builder.ConnectionString);
                     connection.Open();
